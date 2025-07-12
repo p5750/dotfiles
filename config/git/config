@@ -1,0 +1,36 @@
+[include]
+  path = ~/.config/git/config_user
+
+[color]
+  ui = true
+
+[status]
+  showUntrackedFiles = all
+
+[diff]
+  algorithm = histogram
+
+[alias]
+  a = add
+  b = branch -v
+  ba = branch -av
+  br = branch -rv
+  bl = blame
+  co = checkout
+  ci = commit -v
+  dw = diff --color-words
+  d = diff
+  dc = diff --cached
+  st = status -sb
+  up = pull --rebase
+  pr = pull --rebase
+  rp = remote prune
+  l = log
+  ls = log --stat
+  lp = log -p
+
+[ghq]
+  root = ~/repos
+
+[fetch]
+  prune = true

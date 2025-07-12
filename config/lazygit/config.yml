@@ -1,0 +1,7 @@
+disableStartupPopups: true
+quitOnTopLevelReturn: true
+promptToReturnFromSubprocess: false
+notARepository: quit
+
+gui:
+  showIcons: true
