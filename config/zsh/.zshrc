@@ -84,6 +84,7 @@ sheldon::load() {
     \builtin source "$cache_file"
 }
 
+[ -f "$XDG_CONFIG_HOME/zsh/.zshrc-private" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc-private"
 [ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
 
 sheldon::load eager
