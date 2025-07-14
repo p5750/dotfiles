@@ -16,6 +16,9 @@ keybindings.keys = {
   { key = 'c', mods = 'CMD', action = act.CopyTo 'Clipboard' },
   { key = 'v', mods = 'CMD', action = act.PasteFrom 'Clipboard' },
 
+  -- Clear scrollback
+  { key = 'k', mods = 'CMD', action = act.ClearScrollback 'ScrollbackAndViewport' },
+
   -- Tab management
   { key = 't', mods = 'CMD', action = act.SpawnCommandInNewTab({ cwd = wezterm.home_dir }) },
   { key = 't', mods = 'SHIFT|CMD', action = act.SpawnTab 'CurrentPaneDomain' },
