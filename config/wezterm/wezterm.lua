@@ -51,6 +51,11 @@ config.window_background_gradient = {
   colors = { "#000000" },
 }
 
+config.inactive_pane_hsb = {
+  saturation = 0.7,
+  brightness = 0.5,
+}
+
 -- Window Maximize
 wezterm.on("gui-startup", function()
   local _, _, window = wezterm.mux.spawn_window({})
