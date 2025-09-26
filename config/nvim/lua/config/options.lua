@@ -57,3 +57,16 @@ vim.api.nvim_create_autocmd('TermOpen', {
   pattern = '*',
   command = 'startinsert'
 })
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  callback = function()
+    local ft = vim.bo.filetype
+    if ft == "lua" then
+      vim.opt_local.foldmethod = "expr"
+      vim.opt_local.foldexpr = "nvim_treesitter#foldexpr()"
+    elseif ft == "ruby" then
+      vim.opt_local.foldmethod = "indent"
+    else
+      vim.opt_local.foldmethod = "manual"
+    end
+  end,
+})
