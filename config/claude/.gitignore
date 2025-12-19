@@ -3,6 +3,8 @@ statsig/**
 todos/**
 debug/**
 file-history/**
+plugins/
+stats-cache.json
 .update.lock
 .DS_Store
 history.jsonl
