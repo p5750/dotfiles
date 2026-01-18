@@ -24,6 +24,7 @@ path=(
   "$HOME/.pyenv/shims"(N-/)
   "$GOPATH/bin"(N-/)
   "$VOLTA_HOME/bin"(N-)
+  "$CARGO_HOME/bin"(N-/)
   "$path[@]"
 )
 

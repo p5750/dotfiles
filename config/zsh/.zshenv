@@ -27,6 +27,10 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 # Volta
 export VOLTA_HOME="$XDG_DATA_HOME/volta"
 
+# Rust
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+
 # Android
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
