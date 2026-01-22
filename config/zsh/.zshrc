@@ -25,6 +25,7 @@ path=(
   "$GOPATH/bin"(N-/)
   "$VOLTA_HOME/bin"(N-)
   "$CARGO_HOME/bin"(N-/)
+  "$HOME/.local/bin"(N-/)
   "$path[@]"
 )
 
