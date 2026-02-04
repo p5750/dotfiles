@@ -72,7 +72,7 @@ curl -sL https://raw.githubusercontent.com/p5750/dotfiles/main/install.sh | sh
 
 ### Development Tools (via Homebrew)
 Key development tools managed through Brewfile:
-- **Version Managers**: rbenv (Ruby), goenv (Go), volta (Node.js)
+- **Version Managers**: rbenv (Ruby), volta (Node.js)
 - **Search/Find Tools**: fd (modern find), ripgrep (rg)
 - **Shell Enhancements**: atuin (history), zoxide (smart cd)
 - **Security**: sops (encryption), gnupg
