@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "WebSearch",
       "List(*)",
       "Bash(ls:*)",
       "Bash(rg:*)",
