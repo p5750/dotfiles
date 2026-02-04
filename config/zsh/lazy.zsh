@@ -43,6 +43,11 @@ fi
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
 
+# git-wt - git worktree helper
+if type git-wt > /dev/null 2>&1; then
+  eval "$(git wt --init zsh)"
+fi
+
 # ghq
 ## ghqとの連携。ghqの管理下にあるリポジトリを一覧表示する。ctrl - ]にバインド。
 function peco-src () {
@@ -56,5 +61,13 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+# wt - interactive worktree selection with peco
+function wt () {
+  local selected=$(git wt | tail -n +2 | peco --prompt="worktrees >" | awk '{print $(NF-1)}')
+  if [ -n "$selected" ]; then
+    git wt "$selected"
+  fi
+}
 
 sheldon::load lazy
