@@ -16,6 +16,11 @@ export SHELDON_CONFIG_DIR="$ZDOTDIR"
 
 # Go
 export GOPATH="$XDG_DATA_HOME/go"
+export GOCACHE="$XDG_CACHE_HOME/go-build"
+export GOMODCACHE="$XDG_CACHE_HOME/go/pkg/mod"
+export GOENV="$XDG_CONFIG_HOME/go/env"
+export GOTELEMETRYDIR="$XDG_STATE_HOME/go/telemetry"
+export GOBIN="$HOME/.local/bin"
 
 # Rubygems
 # export GEM_HOME="$XDG_DATA_HOME/gem"
