@@ -9,3 +9,4 @@ stats-cache.json
 .update.lock
 .DS_Store
 history.jsonl
+usage-data/**
