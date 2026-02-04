@@ -43,6 +43,36 @@ fi
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
 
+# === First-time setup (runs only once if not configured) ===
+
+# git-wt - install if not present
+if ! type git-wt > /dev/null 2>&1; then
+  if type go > /dev/null 2>&1; then
+    echo "Installing git-wt..."
+    go install github.com/k1LoW/git-wt@latest
+  fi
+fi
+
+# Node.js - install via volta if not present
+if ! type node > /dev/null 2>&1; then
+  if type volta > /dev/null 2>&1; then
+    echo "Installing Node.js via volta..."
+    volta install node
+  else
+    echo "Error: volta is not installed. Please run 'brew install volta' first." >&2
+  fi
+fi
+
+# Claude Code skills - install if not present
+if type npx > /dev/null 2>&1; then
+  local skills_dir="${HOME}/.claude/skills"
+  if [[ ! -d "$skills_dir/vercel-react-best-practices" ]]; then
+    echo "Installing Claude Code skills..."
+    npx add-skill vercel-labs/agent-skills -a claude-code -g -s vercel-react-best-practices -y
+    npx add-skill vercel-labs/agent-skills -a claude-code -g -s web-design-guidelines -y
+  fi
+fi
+
 # git-wt - git worktree helper
 if type git-wt > /dev/null 2>&1; then
   eval "$(git wt --init zsh)"
