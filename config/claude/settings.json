@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "WebSearch",
+      "WebFetch(domain:github.com)",
       "List(*)",
       "Bash(ls:*)",
       "Bash(rg:*)",
