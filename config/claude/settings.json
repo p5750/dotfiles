@@ -10,6 +10,7 @@
       "Bash(find:*)",
       "Bash(grep:*)",
       "Bash(sort:*)",
+      "Bash(test:*)",
       "Bash(which:*)",
       "Bash(docker compose:*)",
       "Bash(git add:*)",
