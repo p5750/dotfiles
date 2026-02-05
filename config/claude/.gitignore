@@ -5,6 +5,8 @@ todos/**
 debug/**
 file-history/**
 plugins/
+paste-cache/**
+tasks/**
 stats-cache.json
 .update.lock
 .DS_Store
