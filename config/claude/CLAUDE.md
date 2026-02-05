@@ -74,3 +74,6 @@ This file provides global instructions to Claude Code across all projects.
 - Add comments for complex logic
 - Update documentation when changing functionality
 - Include examples in documentation when helpful
+
+## Permissions
+- `rm` is not allowed. use `git rm` instead
