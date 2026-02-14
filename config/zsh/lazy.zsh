@@ -63,6 +63,14 @@ if ! type node > /dev/null 2>&1; then
   fi
 fi
 
+# Playwright CLI - install via volta if not present
+if ! type playwright-cli > /dev/null 2>&1; then
+  if type volta > /dev/null 2>&1 && type node > /dev/null 2>&1; then
+    echo "Installing Playwright CLI..."
+    volta install @playwright/cli@latest
+  fi
+fi
+
 # Claude Code skills - install if not present
 if type npx > /dev/null 2>&1; then
   local skills_dir="${HOME}/.claude/skills"
