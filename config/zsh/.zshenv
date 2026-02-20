@@ -36,6 +36,9 @@ export VOLTA_HOME="$XDG_DATA_HOME/volta"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
+# asdf
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+
 # Android
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
