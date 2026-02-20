@@ -1,0 +1,3 @@
+[settings]
+trusted_config_paths = ["~/repos"]
+status = { missing_tools = "always", show_env = false }

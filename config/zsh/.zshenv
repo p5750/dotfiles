@@ -36,9 +36,6 @@ export VOLTA_HOME="$XDG_DATA_HOME/volta"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
-# asdf
-export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
-export ASDF_CONFIG_FILE="$XDG_CONFIG_HOME/asdf/asdfrc"
 
 # Android
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android

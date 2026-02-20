@@ -22,7 +22,6 @@ fi
 
 path=(
   "$HOME/.pyenv/shims"(N-/)
-  "$ASDF_DATA_DIR/shims"(N-/)
   "$VOLTA_HOME/bin"(N-)
   "$CARGO_HOME/bin"(N-/)
   "$HOME/.local/bin"(N-/)
@@ -71,6 +70,9 @@ eval "$(starship init zsh)"
 
 # Volta
 [ ! -f "$XDG_DATA_HOME/zsh/completions/_volta" ] && volta completions zsh -f -o "$XDG_DATA_HOME/zsh/completions/_volta"
+
+# mise
+[ ! -f "$XDG_DATA_HOME/zsh/completions/_mise" ] && mise completion zsh > "$XDG_DATA_HOME/zsh/completions/_mise"
 
 # sheldon
 # https://zenn.dev/fuzmare/articles/zsh-plugin-manager-cache
