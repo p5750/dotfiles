@@ -12,3 +12,4 @@ stats-cache.json
 .DS_Store
 history.jsonl
 usage-data/**
+backups/**
