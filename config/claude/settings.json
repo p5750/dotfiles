@@ -54,7 +54,19 @@
       "Bash(nc:*)",
       "Bash(npm uninstall:*)",
       "Bash(npm remove:*)",
-      "Bash(mysql:*)"
+      "Bash(mysql:*)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Bash(docker compose config*)",
+      "Bash(docker compose exec * env*)",
+      "Bash(docker compose exec * cat*)",
+      "Bash(docker compose exec * printenv*)",
+      "Bash(docker compose exec * sh *)",
+      "Bash(docker compose exec * bash *)",
+      "Bash(docker compose run *)",
+      "Bash(docker inspect*)",
+      "Bash(docker exec*)"
     ]
   },
   "hooks": {
