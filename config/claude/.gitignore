@@ -13,3 +13,4 @@ stats-cache.json
 history.jsonl
 usage-data/**
 backups/**
+.credentials.json
