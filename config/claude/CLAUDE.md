@@ -77,3 +77,4 @@ This file provides global instructions to Claude Code across all projects.
 
 ## Permissions
 - `rm` is not allowed. use `git rm` instead
+- `find` is not allowed. Use the built-in `Glob` tool for file name search and `Grep` tool for content search instead
