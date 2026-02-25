@@ -1,16 +1,27 @@
-cache/**
-projects/**
-statsig/**
-todos/**
-debug/**
-file-history/**
-plugins/
-paste-cache/**
-tasks/**
-stats-cache.json
-.update.lock
-.DS_Store
-history.jsonl
-usage-data/**
-backups/**
-.credentials.json
+# Ignore everything by default
+*
+
+# Track these files
+!.gitignore
+!CLAUDE.md
+!settings.json
+!statusline.sh
+
+# Agents
+!agents/
+!agents/*.md
+
+# Commands (each subdir manages its own .gitignore)
+!commands/
+!commands/create-sow.md
+!commands/*/
+!commands/*/.gitignore
+
+# Plugins
+!plugins/
+!plugins/config.json
+
+# Skills (each skill manages its own .gitignore)
+!skills/
+!skills/*/
+!skills/*/.gitignore
