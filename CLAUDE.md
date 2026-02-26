@@ -14,6 +14,7 @@ This is a personal dotfiles repository that manages configuration for various de
 - LazyGit (TUI for git) - see @docs/lazygit.md
 - Homebrew packages - see @docs/homebrew.md
 - Claude Code configuration - see @docs/claude-config.md
+- Codex CLI (OpenAI coding agent) - see @docs/codex.md
 - Atuin (shell history management)
 
 ## Installation and Setup
@@ -37,6 +38,7 @@ curl -sL https://raw.githubusercontent.com/p5750/dotfiles/main/install.sh | sh
   - `lazygit/` - LazyGit configuration (@docs/lazygit.md)
   - `hammerspoon/` - macOS automation scripts (@docs/hammerspoon.md)
   - `claude/` - Claude Code configuration (@docs/claude-config.md)
+  - `codex/` - Codex CLI configuration (@docs/codex.md)
   - `mise/` - mise runtime version manager settings
 
 ### Key Design Patterns
