@@ -1,0 +1,29 @@
+# Runtime state
+.codex-global-state.json
+.personality_migration
+
+# Authentication (secrets)
+auth.json
+
+# Caches
+models_cache.json
+
+# Session logs
+sessions/
+
+# Database
+sqlite/
+
+# System skills (auto-installed)
+skills/.system/
+
+# Vendor imports (nested git repo + cache)
+vendor_imports/
+
+# Working directories
+worktrees/
+tmp/
+shell_snapshots/
+
+# Codex-generated rules (base.rules is tracked instead)
+rules/default.rules
