@@ -1,0 +1,37 @@
+# Execution policy rules for Codex CLI
+# Mirrors deny rules from config/claude/settings.json
+
+# Destructive commands
+prefix_rule(pattern = ["sudo"], decision = "forbidden")
+prefix_rule(pattern = ["su"], decision = "forbidden")
+prefix_rule(pattern = ["rm"], decision = "forbidden")
+
+# Git: force push, hard reset, clean, tag
+prefix_rule(pattern = ["git", "push", ["-f", "--force"]], decision = "forbidden")
+prefix_rule(pattern = ["git", "reset", "--hard"], decision = "forbidden")
+prefix_rule(pattern = ["git", "clean"], decision = "forbidden")
+prefix_rule(pattern = ["git", "tag"], decision = "forbidden")
+prefix_rule(pattern = ["git", "-C"], decision = "forbidden")
+
+# Git: broad staging/commit
+prefix_rule(pattern = ["git", "add", [".", "-A", "--all", "-u", "--update"]], decision = "forbidden")
+prefix_rule(pattern = ["git", "commit", ["-a", "--all"]], decision = "forbidden")
+
+# Network tools
+prefix_rule(pattern = ["curl"], decision = "forbidden")
+prefix_rule(pattern = ["wget"], decision = "forbidden")
+prefix_rule(pattern = ["nc"], decision = "forbidden")
+
+# Package removal
+prefix_rule(pattern = ["npm", ["uninstall", "remove"]], decision = "forbidden")
+
+# Database
+prefix_rule(pattern = ["mysql"], decision = "forbidden")
+
+# Find (use alternative tools)
+prefix_rule(pattern = ["find"], decision = "forbidden")
+
+# Docker: secret-leaking commands
+prefix_rule(pattern = ["docker", "compose", ["config", "run"]], decision = "forbidden")
+prefix_rule(pattern = ["docker", "compose", "exec"], decision = "forbidden")
+prefix_rule(pattern = ["docker", ["inspect", "exec"]], decision = "forbidden")

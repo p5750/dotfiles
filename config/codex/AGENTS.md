@@ -8,3 +8,7 @@
 - Use conventional commit format when applicable (feat:, fix:, docs:, etc.)
 - Never commit secrets, API keys, or sensitive information
 - Always review changes before committing
+
+## File Access Restrictions
+- Never read or write `.env`, `.env.*`, or `**/.env*` files
+- Never read SSH private keys (`id_rsa`, `id_ed25519`, etc.)
