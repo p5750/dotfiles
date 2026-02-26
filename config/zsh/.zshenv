@@ -36,6 +36,8 @@ export VOLTA_HOME="$XDG_DATA_HOME/volta"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
+# Codex
+export CODEX_HOME="$XDG_CONFIG_HOME/codex"
 
 # Android
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android

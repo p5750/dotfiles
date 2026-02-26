@@ -1,6 +1,7 @@
 brew "atuin"
 brew "awscli"
 brew "aws-vault"
+brew "codex"
 brew "colordiff"
 brew "coreutils"
 brew "ctags"

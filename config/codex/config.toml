@@ -1,0 +1,7 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+model_reasoning_effort = "high"
+web_search = "live"
+
+[sandbox_workspace_write]
+network_access = true
