@@ -13,6 +13,9 @@ sessions/
 
 # Database
 sqlite/
+state*.sqlite
+state*.sqlite-shm
+state*.sqlite-wal
 
 # System skills (auto-installed)
 skills/.system/
