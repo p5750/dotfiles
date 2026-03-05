@@ -37,7 +37,7 @@ Key mappings:
 
 Autocommands:
 - `TermOpen` -> auto startinsert
-- `FileType` -> folding (Lua: treesitter expr, Ruby: indent, others: manual)
+- `FileType` -> folding (Lua/Terraform: treesitter expr, Ruby: indent, others: manual)
 - `*.slim` files -> set ft=slim
 
 ### commands.lua
@@ -61,7 +61,7 @@ Autocommands:
 | `telescope.lua` | telescope.nvim (0.1.8) | Fuzzy finder: `<C-p>` files, `<leader>s` live grep, `<leader>;` buffers. Vertical layout |
 | `nvim-tree.lua` | nvim-tree.lua | File explorer (width 30), auto-finds current file, custom git glyphs |
 | `completion.lua` | nvim-cmp + autoclose.nvim | Completion from LSP, buffer, path sources |
-| `treesitter.lua` | nvim-treesitter | Syntax highlighting for typescript, tsx, cpp, yaml, lua, vimdoc, vue, json, markdown |
+| `treesitter.lua` | nvim-treesitter | Syntax highlighting for typescript, tsx, cpp, yaml, lua, vimdoc, vue, json, markdown, terraform |
 | `colorscheme.lua` | tokyonight.nvim | Tokyo Night (night variant), transparent background |
 | `lualine.lua` | lualine.nvim | Status line with relative file path and LSP progress |
 | `claude-code.lua` | claude-code.nvim | Claude Code integration (default setup) |

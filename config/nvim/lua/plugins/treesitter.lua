@@ -14,6 +14,7 @@ return {
           "vue",
           "json",
           "markdown",
+          "terraform",
         },
         highlight = {
           enable = true,

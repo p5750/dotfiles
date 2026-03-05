@@ -60,9 +60,9 @@ vim.api.nvim_create_autocmd('TermOpen', {
 vim.api.nvim_create_autocmd({ "FileType" }, {
   callback = function()
     local ft = vim.bo.filetype
-    if ft == "lua" then
+    if ft == "lua" or ft == "terraform" then
       vim.opt_local.foldmethod = "expr"
-      vim.opt_local.foldexpr = "nvim_treesitter#foldexpr()"
+      vim.opt_local.foldexpr = "v:lua.vim.treesitter.foldexpr()"
     elseif ft == "ruby" then
       vim.opt_local.foldmethod = "indent"
     else
