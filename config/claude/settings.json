@@ -97,6 +97,17 @@
   },
   "model": "opus",
   "hooks": {
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/pre-compact.sh"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",

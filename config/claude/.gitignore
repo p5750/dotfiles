@@ -21,6 +21,10 @@
 !plugins/
 !plugins/config.json
 
+# Hooks
+!hooks/
+!hooks/*.sh
+
 # Skills (each skill manages its own .gitignore)
 !skills/
 !skills/*/
