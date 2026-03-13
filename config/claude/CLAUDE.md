@@ -7,6 +7,16 @@
 ## Git Workflow
 - Use conventional commit format (feat:, fix:, docs:, etc.)
 - Never commit secrets, API keys, or sensitive information
+- For multi-line commit messages, use `git commit -F -` with heredoc instead of `cat`:
+  ```
+  git commit -F - <<'EOF'
+  feat: summary
+
+  Details here.
+
+  Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
+  EOF
+  ```
 
 ## Shell Scripts
 - Use bash instead of sh
@@ -24,6 +34,9 @@
 ## Permissions
 - `rm` is not allowed. Use `git rm` instead
 - `find` is not allowed. Use `Glob` for file search and `Grep` for content search
+- `grep`/`rg` is not allowed. Use `Grep` tool instead
+- `cat`/`head`/`tail` is not allowed. Use `Read` tool instead
+- `sed`/`awk` is not allowed. Use `Edit` tool instead
 - `git add` must specify individual files. `-A`, `--all`, `-u`, `--update`, `.` are not allowed
 - `git reset` must specify `--soft` or `--mixed` explicitly. Bare `git reset` is not allowed
 - `git -C` is not allowed. `cd` to the target directory first

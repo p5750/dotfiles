@@ -4,9 +4,6 @@
       "WebSearch",
       "WebFetch(domain:github.com)",
       "List(*)",
-      "Bash(ls:*)",
-      "Bash(rg:*)",
-      "Bash(grep:*)",
       "Bash(sort:*)",
       "Bash(test:*)",
       "Bash(which:*)",
@@ -96,7 +93,14 @@
       "Bash(docker compose exec * bash *)",
       "Bash(docker compose run *)",
       "Bash(docker inspect*)",
-      "Bash(docker exec*)"
+      "Bash(docker exec*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(sed:*)",
+      "Bash(awk:*)"
     ]
   },
   "model": "opus",

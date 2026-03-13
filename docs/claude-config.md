@@ -24,7 +24,7 @@ ln -sfv "$REPO_DIR/config/claude" "$HOME/.claude"
 ### Permissions (Allow)
 
 - Web search, GitHub fetch
-- Common bash read commands (ls, rg, grep, sort, test, which)
+- Common bash read commands (sort, test, which)
 - Git operations (add, pull, checkout, cherry-pick, commit, status, log, diff, show, blame, branch, switch, fetch, stash, revert, merge, push, soft/mixed reset, rm, mv)
 - GitHub CLI (pr list, pr view, pr diff)
 - Package managers (npm, pnpm, yarn: install, add, run, test, start)
@@ -38,6 +38,7 @@ ln -sfv "$REPO_DIR/config/claude" "$HOME/.claude"
 - Broad staging: `git add .`, `git add -A`, `git add --all`, `git commit -a`
 - Network: curl, wget, nc
 - Secrets: Read .env files, Read SSH keys
+- Built-in tool bypass: rg, grep (use Grep), cat, head, tail (use Read), sed, awk (use Edit)
 - Docker exec/inspect, mysql
 
 ### Hooks
