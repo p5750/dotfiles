@@ -1,0 +1,9 @@
+# Ignore everything by default (inherited from parent)
+*
+
+# Track these files
+!.gitignore
+!SKILL.md
+!INSTRUCTIONS.md
+!bin/
+!bin/*.sh

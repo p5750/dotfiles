@@ -30,6 +30,7 @@ ln -sfv "$REPO_DIR/config/claude" "$HOME/.claude"
 - Package managers (npm, pnpm, yarn: install, add, run, test, start)
 - Ruby tools (bundle exec rubocop)
 - System (afplay, docker compose)
+- Skills (codex-second-opinion wrapper scripts)
 
 ### Permissions (Deny)
 
@@ -61,6 +62,20 @@ Downloaded from `qdhenry/Claude-Command-Suite` (pinned to commit `62a6b7a`) by `
 - `dependency-audit`
 - `explain-code`
 - `test-coverage`
+
+## Skills
+
+### codex-second-opinion
+
+Codex CLI でセカンドオピニオンを得るスキル。`codex exec` を直接許可せず、ラッパースクリプト経由で実行する。
+
+| スクリプト | 用途 |
+|-----------|------|
+| `skills/codex-second-opinion/bin/codex-check.sh` | Codex CLI の存在・認証確認 |
+| `skills/codex-second-opinion/bin/codex-review.sh` | 初回レビュー実行 |
+| `skills/codex-second-opinion/bin/codex-resume.sh` | 再レビュー実行 (session resume) |
+
+一時ファイルはプロジェクト配下の `.claude/tmp/` に保存される。
 
 ## Setup Scripts
 

@@ -49,7 +49,11 @@
       "Bash(yarn test:*)",
       "Bash(yarn start:*)",
       "Bash(bundle exec rubocop:*)",
-      "Bash(afplay:*)"
+      "Bash(afplay:*)",
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-init-session.sh:*)",
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-check.sh:*)",
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-review.sh:*)",
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-resume.sh:*)"
     ],
     "deny": [
       "Bash(sudo:*)",
