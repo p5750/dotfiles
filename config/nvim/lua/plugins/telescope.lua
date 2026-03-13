@@ -30,9 +30,17 @@ return {
         },
       }
 
+      local worktree = require('config.worktree')
+      local ignore_patterns = {}
+      local wt_pattern = worktree.get_ignore_pattern()
+      if wt_pattern then
+        table.insert(ignore_patterns, wt_pattern)
+      end
+
       require('telescope').setup {
         defaults = {
           layout_strategy = 'vertical',
+          file_ignore_patterns = ignore_patterns,
           mappings = {
             i = my_mappings,
             n = my_mappings,

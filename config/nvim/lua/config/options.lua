@@ -50,7 +50,9 @@ vim.keymap.set('n', 'tx', '<cmd>belowright new<CR><cmd>terminal<CR>', { silent =
 vim.keymap.set('n', '<leader>hd', '<cmd>DiffviewOpen HEAD~1<CR>', { silent = true })
 vim.keymap.set('n', '<leader>hf', '<cmd>DiffviewFileHistory %<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bl', '<cmd>GitBlameToggle<CR>')
-vim.keymap.set('n', 'grd', '<cmd>:lua vim.lsp.buf.definition()<CR>', { silent = true })
+vim.keymap.set('n', 'grd', function()
+  vim.lsp.buf.definition({ on_list = require('config.worktree').on_list })
+end, { silent = true })
 
 -- Autocommands
 vim.api.nvim_create_autocmd('TermOpen', {

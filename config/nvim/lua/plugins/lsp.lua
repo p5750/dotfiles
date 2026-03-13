@@ -45,6 +45,9 @@ return {
         callback = function(ev)
           vim.api.nvim_buf_set_keymap(ev.buf, 'n', '<leader>li', '<cmd>LspInfo<CR>',
             { noremap = true, silent = true, desc = 'LSP Info' })
+          vim.keymap.set('n', 'grr', function()
+            vim.lsp.buf.references(nil, { on_list = require('config.worktree').on_list })
+          end, { buffer = ev.buf, silent = true, desc = 'LSP references (filtered)' })
         end,
       })
 
@@ -67,9 +70,12 @@ return {
         return unique_results
       end
 
-      -- LSP handlers to remove duplicates
+      local worktree = require('config.worktree')
+
+      -- LSP handlers to remove duplicates and worktree results
       vim.lsp.handlers['textDocument/references'] = function(_, result, ctx, config)
         local unique_results = remove_duplicates(result)
+        unique_results = worktree.filter_results(unique_results)
         if vim.tbl_isempty(unique_results) then
           return
         end
@@ -84,6 +90,7 @@ return {
 
       vim.lsp.handlers['textDocument/definition'] = function(_, result, ctx, config)
         local unique_results = remove_duplicates(result)
+        unique_results = worktree.filter_results(unique_results)
         if vim.tbl_isempty(unique_results) then
           return
         end
