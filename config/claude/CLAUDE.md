@@ -34,7 +34,7 @@
 ## Permissions
 - `rm` is not allowed. Use `git rm` instead
 - `find` is not allowed. Use `Glob` for file search and `Grep` for content search
-- `grep`/`rg` is not allowed. Use `Grep` tool instead
+- `grep`/`rg` でファイルを直接検索してはいけない。`Grep` tool を使うこと。パイプでの stdout フィルタリングは許可（例: `command | grep pattern`）
 - `cat`/`head`/`tail` is not allowed. Use `Read` tool instead
 - `sed`/`awk` is not allowed. Use `Edit` tool instead
 - `git add` must specify individual files. `-A`, `--all`, `-u`, `--update`, `.` are not allowed

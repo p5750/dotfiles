@@ -95,8 +95,6 @@
       "Bash(docker compose run *)",
       "Bash(docker inspect*)",
       "Bash(docker exec*)",
-      "Bash(rg:*)",
-      "Bash(grep:*)",
       "Bash(cat:*)",
       "Bash(head:*)",
       "Bash(tail:*)",
