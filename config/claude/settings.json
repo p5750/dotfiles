@@ -50,7 +50,8 @@
       "Bash(~/.claude/skills/codex-second-opinion/bin/codex-init-session.sh:*)",
       "Bash(~/.claude/skills/codex-second-opinion/bin/codex-check.sh:*)",
       "Bash(~/.claude/skills/codex-second-opinion/bin/codex-review.sh:*)",
-      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-resume.sh:*)"
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-resume.sh:*)",
+      "Bash(~/.claude/skills/codex-second-opinion/bin/codex-prepare-input.sh:*)"
     ],
     "deny": [
       "Bash(sudo:*)",

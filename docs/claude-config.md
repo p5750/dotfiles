@@ -75,6 +75,7 @@ Codex CLI でセカンドオピニオンを得るスキル。`codex exec` を直
 | `skills/codex-second-opinion/bin/codex-check.sh` | Codex CLI の存在・認証確認 |
 | `skills/codex-second-opinion/bin/codex-review.sh` | 初回レビュー実行 |
 | `skills/codex-second-opinion/bin/codex-resume.sh` | 再レビュー実行 (session resume) |
+| `skills/codex-second-opinion/bin/codex-prepare-input.sh` | レビュー対象ファイルを `.claude/tmp/` にコピー |
 
 一時ファイルはプロジェクト配下の `.claude/tmp/` に保存される。
 

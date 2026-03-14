@@ -41,8 +41,10 @@ AskUserQuestion を使い、以下から選択させる:
 ## Step 2: セッション準備
 
 ```bash
-REVIEW_ID=$(~/.claude/skills/codex-second-opinion/bin/codex-init-session.sh)
+~/.claude/skills/codex-second-opinion/bin/codex-init-session.sh
 ```
+
+stdout に出力された REVIEW_ID を以降のステップで使用する。
 
 一時ファイルパス:
 - レビュー対象: `.claude/tmp/claude-input-${REVIEW_ID}.md`
@@ -54,6 +56,12 @@ REVIEW_ID=$(~/.claude/skills/codex-second-opinion/bin/codex-init-session.sh)
 
 ### Plan Review の場合
 現在の会話コンテキストにある Plan を `.claude/tmp/claude-input-${REVIEW_ID}.md` に書き出す。
+Plan ファイルが存在する場合はラッパースクリプトでコピーする:
+
+```bash
+~/.claude/skills/codex-second-opinion/bin/codex-prepare-input.sh <plan_file_path> <REVIEW_ID>
+```
+
 Plan が存在しない場合はユーザーに何をレビューしたいか確認する。
 
 ### Code Review の場合

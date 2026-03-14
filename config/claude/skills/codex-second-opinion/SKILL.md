@@ -21,6 +21,7 @@ Codex のフィードバックに基づいて Claude が改善し、再レビュ
 | `bin/codex-check.sh` | Codex CLI の存在・認証確認 |
 | `bin/codex-review.sh` | 初回レビュー実行 (`codex exec` ラッパー) |
 | `bin/codex-resume.sh` | 再レビュー実行 (`codex exec resume` ラッパー) |
+| `bin/codex-prepare-input.sh` | レビュー対象ファイルを `.claude/tmp/` にコピー |
 
 ## 一時ファイル
 
